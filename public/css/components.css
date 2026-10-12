@@ -1,0 +1,47 @@
+.card-panel {
+  background: var(--surface);
+  border: 0.0625rem solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: background .3s ease, border-color .3s ease;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 0.0625rem solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: background .3s ease, border-color .3s ease;
+}
+
+.btn-theme-toggle {
+  background: var(--surface-2);
+  border: 0.0625rem solid var(--border);
+  color: var(--text);
+  width: 2.375rem; height: 2.375rem; /* 38px / 16 */
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.btn-theme-toggle:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.spinner-custom {
+  width: 2rem; height: 2rem;
+  border: 0.1875rem solid var(--border);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
